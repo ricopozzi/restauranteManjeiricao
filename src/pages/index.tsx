@@ -1,7 +1,6 @@
 import { Box, Container, Heading, Image, Text } from '@chakra-ui/react'
 import { CardapioSection } from '../components/CardapioSection'
 import { FoodTypes } from '../components/FoodTypes'
-import { Map } from '../components/Map'
 import { Header } from '../components/Header'
 import {Reviews } from '../components/Reviews'
 
