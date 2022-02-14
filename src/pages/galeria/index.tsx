@@ -1,6 +1,6 @@
 import { Box, Grid, GridItem, Image, Stack} from '@chakra-ui/react'
-import { Header } from '../components/Header'
-import { ImageContainer } from '../components/ImageContainer'
+import { Header } from '../../components/Header'
+import { ImageContainer } from '../../components/ImageContainer'
 
 export default function Galery(){
     return(
