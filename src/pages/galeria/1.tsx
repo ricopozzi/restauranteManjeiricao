@@ -29,7 +29,7 @@ export default function ImagePage(){
                 >X</Button>
 
             </Box>
-            <Image objectFit="cover" src="https:/picsum.photos/1200/800" />
+            <Image src="https:/picsum.photos/1200/800" />
             
         </Box>
     )
