@@ -10,7 +10,7 @@ export function ImageContainer({src, ...rest}: ImageProps){
     const router = useRouter()
 
     const handleClick = () => {
-        router.push(`/galeria/${src}`)
+        router.push(`/galeria/1`)
     }
 
     return(
