@@ -1,8 +1,9 @@
-import { Box, Container, Heading, Image, Text } from '@chakra-ui/react'
+import { Box, Heading, Text, Image } from '@chakra-ui/react'
 import { CardapioSection } from '../components/CardapioSection'
 import { FoodTypes } from '../components/FoodTypes'
 import { Header } from '../components/Header'
 import {Reviews } from '../components/Reviews'
+
 
 export default function Home(){
   return(
@@ -61,6 +62,7 @@ export default function Home(){
             src="http://tasteandtickets.com/wp-content/uploads/2019/05/Capturar-1.png"
             my='auto'
             w="100%"
+            loading="lazy"
             
             />
 

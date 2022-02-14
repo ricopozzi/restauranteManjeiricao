@@ -16,7 +16,7 @@ export function TypeFood({ src, text ,...rest }: TFProps){
         alignItems="center"
         p={4}
         >
-            <Image src={src} maxW="64px" maxH="64px" bg="none" {...rest}/>
+            <Image loading="lazy" src={src} maxW="64px" maxH="64px" bg="none" {...rest}/>
             <Text mt="auto">{text}</Text>
 
         </Box>

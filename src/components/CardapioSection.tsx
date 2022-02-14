@@ -10,7 +10,7 @@ export function CardapioSection(){
         display="flex"
         flexDir={{base:'column', md:'row'}}
         >
-            <Image display={{base:'none', md:'flex'}} w="55%" src="https://blog.bonitour.com.br/wp-content/uploads/2021/09/Blog-Comidas-Tipicas-Bonitour-Viagens_Destaque-08.jpg" />
+            <Image loading="lazy" display={{base:'none', md:'flex'}} w="55%" src="https://blog.bonitour.com.br/wp-content/uploads/2021/09/Blog-Comidas-Tipicas-Bonitour-Viagens_Destaque-08.jpg" />
             <VStack
             flex="1"
             minH="70vh"

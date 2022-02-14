@@ -1,20 +1,24 @@
 import { Box, Button, HStack, Image, Menu, MenuButton, MenuList, MenuItem, Icon } from '@chakra-ui/react'
 import { MdMenu } from 'react-icons/md'
+import { animateScroll as scroll } from 'react-scroll'
+import { useRouter } from 'next/router' 
+import { useState } from 'react'
 
 export function Header(){
+    const router = useRouter()
+    const [ href, setHref ] = useState('#')
 
     const scrollToBottom = () => {
-        window.scrollTo({
-            top: 1000000,
-            behavior:'smooth'
-        })
+        scroll.scrollToBottom()
     }
 
     const scrollTop = () => {
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
-        })
+        if(router.pathname == "/"){
+            scroll.scrollToTop()
+        } else {
+            setHref('/')
+        }
+       
     }
 
     return(
@@ -27,7 +31,7 @@ export function Header(){
         position="fixed"
         >
             <Image
-            src="/majerica.png"
+            src="majerica.png"
             boxSize={{base:'12', md:'16'}}
             my="auto"
             borderRadius="full"
@@ -42,7 +46,8 @@ export function Header(){
             
             >
                 <Box
-                w="4rem"
+                as="a"
+                w="7rem"
                 h="50%"
                 cursor="pointer"
                 display="flex"
@@ -53,10 +58,10 @@ export function Header(){
                     textDecoration: 'underline'
                 }}
                 onClick={scrollTop}
-                          
+                href={href}
                 >Início</Box>
                  <Box
-                w="4rem"
+                w="7rem"
                 h="50%"
                 cursor="pointer"
                 display="flex"
@@ -75,7 +80,6 @@ export function Header(){
                 display="flex"
                 alignItems="center"
                 justifyContent="center"
-                fontSize="sm"
                 textColor="gray.600"
                 _hover={{
                     textDecoration: 'underline'
@@ -83,6 +87,21 @@ export function Header(){
                 onClick={scrollToBottom}
  
                 >Avaliações</Box>
+
+                <Box
+                w="7rem"
+                h="50%"
+                cursor="pointer"
+                display="flex"
+                alignItems="center"
+                justifyContent="center"
+                textColor="gray.600"
+                _hover={{
+                    textDecoration: 'underline'
+                }}
+                onClick={() => router.push('/galeria')}
+ 
+                >Galeria</Box>
 
             </HStack>
 
@@ -107,15 +126,23 @@ export function Header(){
                 >
                     <Icon as={MdMenu} color="gray.100" m="auto" h="100%" display="flex" my="auto" />
                 </MenuButton>
-                <MenuList>
+                <MenuList >
                     <MenuItem
                     onClick={scrollTop}
+                    as="a"
+                    href={href}
                     >Início</MenuItem>
                     <MenuItem>Cardápio</MenuItem>
                     <MenuItem
                     onClick={scrollToBottom}
                     >Avaliações</MenuItem>
+                    <MenuItem
+                        onClick={() => router.push('/galeria')}
+                        >
+                    Galeria
+                </MenuItem>
                 </MenuList>
+                
                 </Menu>
 
             </Box>
