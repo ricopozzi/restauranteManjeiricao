@@ -4,7 +4,7 @@ import { useRouter } from "next/router";
 
 export default function ImagePage(){
     const router = useRouter()
-    const { src } = router.query
+    //const { src } = router.query
 
     return(
         <Box
