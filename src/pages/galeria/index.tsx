@@ -45,35 +45,37 @@ export default function Galery(){
                         </GridItem>
                         
                     </Grid> */}
-                    <Wrap w="100%" align="center" spacing="30px" display="flex" justify="center" >
+                    <Wrap w="100%" spacing="20px" display="flex"  >
                         <WrapItem 
-                        maxW={{base:'80vw',md:"40vw"}}
+                        maxW={{base:'100%',md:"40vw"}}
                         maxH="40vh"
                         >
                             <ImageContainer 
                             src='/majericaestatua.jpg'
-                            maxW={{base:'80vw',md:"40vw"}}
-                            maxH="40vh" 
+                            boxSize={{base:'100%',md:"90%"}}
+                            objectFit="cover"
                             />
                         </WrapItem>
                         <WrapItem 
-                        maxW={{base:'80vw',md:"40vw"}}
-                        maxH="40vh" 
+                        w={{base:'100%', md:"40vw"}}
+                        maxH="40vh"
+
                         >
                             <ImageContainer 
                             src='/majericario.jpg'
-                            maxW={{base:'100%',md:"40vw"}}
-                            maxH="40vh" 
+                            boxSize={{base:'100%',md:"90%"}}
+                            objectFit="cover"
+                            
                             />
                         </WrapItem>
                         <WrapItem 
-                        maxW={{base:'80vw',md:"40vw"}}
+                        maxW={{base:'100%',md:"40vw"}}
                         maxH="40vh" 
                         >
                             <ImageContainer 
                             src='/majericaentrada.jpg'
-                            maxW={{base:'80vw',md:"40vw"}}
-                            maxH="40vh" 
+                            boxSize={{base:'100%',md:"90%"}}
+                            objectFit="cover"
                             />
                         </WrapItem>
                         

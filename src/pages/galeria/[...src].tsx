@@ -29,7 +29,7 @@ export default function ImagePage(){
                 >X</Button>
 
             </Box>
-            <Image src={`/${src}`} />
+            <Image w={{base:'90vw',md:"70vw"}} h={{base:'50vh',md:"90vh"}} objectFit="cover" src={`/${src}`} />
             
         </Box>
     )
