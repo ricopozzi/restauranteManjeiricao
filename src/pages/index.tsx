@@ -13,6 +13,7 @@ export default function Home(){
       w="100%"
       minH="70vh"
       pt="8vh"
+      bg="white"
       >
         <Box
         w="100%"

@@ -111,6 +111,7 @@ export function Header(){
              justifyContent='flex-end'
              alignItems="center"
              pr="4"
+             zIndex={1}
            
             >
                 <Menu>
@@ -126,11 +127,13 @@ export function Header(){
                 >
                     <Icon as={MdMenu} color="gray.100" m="auto" h="100%" display="flex" my="auto" />
                 </MenuButton>
-                <MenuList >
+                <MenuList 
+                bg="white">
                     <MenuItem
                     onClick={scrollTop}
                     as="a"
                     href={href}
+                    
                     >Início</MenuItem>
                     <MenuItem>Cardápio</MenuItem>
                     <MenuItem

@@ -4,7 +4,7 @@ import { useRouter } from "next/router";
 
 export default function ImagePage(){
     const router = useRouter()
-    //const { src } = router.query
+    const { src } = router.query
 
     return(
         <Box
@@ -29,7 +29,7 @@ export default function ImagePage(){
                 >X</Button>
 
             </Box>
-            <Image src="/majericaFoto.jpg" />
+            <Image src={`/${src}`} />
             
         </Box>
     )
