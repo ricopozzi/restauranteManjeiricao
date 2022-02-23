@@ -38,7 +38,7 @@ export default function Home(){
             fontWeight="semibold"
             fontSize={{base:'2rem',md:"5rem"}}
             textColor="CaptionText"
-            >Manjeiricão</Heading>
+            >Manjericão</Heading>
             <Text
             w={{base:'100%', md:"50%"}}
             mt="4"
